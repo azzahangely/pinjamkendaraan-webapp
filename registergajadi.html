@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <!-- Add Bootstrap 4 CSS link here -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Add Flaticon CSS link here -->
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+    }
+
+    .register-card {
+      max-width: 500px; /* Updated max-width */
+      margin: 100px auto; /* Center the card on the page */
+      padding: 30px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .register-card-header {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .register-icon {
+      font-size: 24px;
+      margin-right: 10px;
+    }
+
+    .register-button {
+      width: 100%;
+    }
+
+    .login-link {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    /* Animation */
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animated {
+      animation-duration: 1s;
+      animation-fill-mode: both;
+    }
+
+    .fadeInDown {
+      animation-name: fadeInDown;
+    }
+  </style>
+</head>
+<body>
+  <div class="register-card animated fadeInDown">
+    <div class="register-card-header">
+      <i class="flaticon-user register-icon"></i>
+      Register Account 
+    </div>
+    <form>
+      <div class="form-group">
+        <label for="name">
+          <i class="flaticon-user register-icon"></i>
+          Name
+        </label>
+        <input type="text" class="form-control" id="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">
+          <i class="flaticon-email register-icon"></i>
+          Email
+        </label>
+        <input type="email" class="form-control" id="email" required>
+      </div>
+      <div class="form-group">
+        <label for="work-location">Work Location</label>
+        <select class="form-control" id="work-location" required>
+          <option value="" disabled selected>Select Work Location</option>
+          <option value="Jakarta">Jakarta</option>
+          <option value="Bandung">Bandung</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="password">
+          <i class="flaticon-password register-icon"></i>
+          Password
+        </label>
+        <input type="password" class="form-control" id="password" required>
+      </div>
+      <div class="form-group">
+        <label for="retype-password">
+          <i class="flaticon-password register-icon"></i>
+          Retype Password
+        </label>
+        <input type="password" class="form-control" id="retype-password" required>
+      </div>
+      <button type="submit" class="btn btn-primary register-button">Register</button>
+    </form>
+    <div class="login-link">
+      <p>Already have an account? <a href="login.html">Sign in!</a></p>
+    </div>
+  </div>
+</body>
+</html>
+</body>
+</html>

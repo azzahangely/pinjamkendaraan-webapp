@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HSP | Pinjam Kendaraan </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/favicon.png" alt="Logo" class="logo-img">
+                Pinjam<span>Kendaraan</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="index.html" class="nav-link">Beranda</a></li>
+                    <li class="nav-item"><a href="car.html" class="nav-link">Kendaraan</a></li>
+                    <li class="nav-item"><a href="rent.html" class="nav-link">Riwayat</a></li>
+
+                    <li class="nav-item dropdown">
+                        <a href="my-profile.html" class="nav-link dropdown-toggle" id="profileDropdown"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="images/user.png" alt="Profile" class="rounded-circle"
+                                style="width: 30px; height: 30px;">
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="profileDropdown">
+                            <a class="dropdown-item" href="my-profile.html">Profil</a>
+                            <a class="dropdown-item" href="#">Keluar</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- END nav -->
+
+    <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/bg_3.jpg');"
+        data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start">
+                <div class="col-md-9 ftco-animate pb-5">
+                    <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Beranda <i
+                                    class="ion-ios-arrow-forward"></i></a></span> <span>Kendaraan <i
+                                class="ion-ios-arrow-forward"></i></span></p>
+                    <h1 class="mb-3 bread">Daftar Kendaraan</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="ftco-section bg-light">
+        <div class="container">
+            <div class="container">
+                <div class="row mt-4">
+                    <div class="col-md-4 mb-3"> <!-- Adjust the column width as needed -->
+                        <div class="dropdown" style="width: 100%;">
+                            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span class="icon-filter"></span> &nbsp;
+                                Lihat Berdasarkan
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                              <button class="dropdown-item" type="button">Tanggal</button>
+                              <button class="dropdown-item" type="button">Nomor Plat Kendaraan</button>
+                              <button class="dropdown-item" type="button">Ketersediaan</button>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-8"> <!-- Adjust the column width as needed -->
+                        <div class="form-group">
+                            <span class="form-control-feedback"></span>
+                            <input type="search" class="form-control" placeholder="Cari Kendaraan">
+                          </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car-listing-grid mt-5">
+
+                <!-- Dummy data starts from here -->
+                <div class="car-item ftco-animate">
+                    <div class="photo-container">
+                        <img src="images/1675235520_beat_silver.jpg" alt="Honda Beat">
+                    </div>
+                    <div class="car-info">
+                        <div class="car-row car-info-header">
+                            <div class="car-name">Honda Beat</div>
+                        </div>
+                        <div class="car-row car-info-details">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <div class="info-icon-container"><img class="info-icon" src="images/plate.png"
+                                                alt="License Icon"></div>
+                                        <div class="info-label">Nomor Plat</div>
+                                        <div class="info-value">B 4562 BHI</div>
+                                    </td>
+                                    <td>
+                                        <div class="info-icon-container"><img class="info-icon"
+                                                src="images/005-depreciation.png" alt="STNK Icon"></div>
+                                        <div class="info-label">Status</div>
+                                        <div class="info-value">Perpanjang STNK</div>
+                                    </td>
+                                    <td>
+                                        <div class="info-icon-container"><img class="info-icon" src="images/check.png"
+                                                alt="Tax Icon"></div>
+                                        <div class="info-label">Pajak/Tahun </div>
+                                        <div class="info-value">241 <span> hari lagi</span> </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="info-icon-container"><img class="info-icon"
+                                                src="images/004-location.png" alt="Location Icon"> <span
+                                                class="info-label">Location :</span> </div>
+                                    </td>
+                                    <td>
+                                        <div class="info-value">Jakarta</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <div class="info-value availability">Tidak Dipakai</div>
+                                    </td>
+                                    <td>
+                                        <button class="borrow-button" data-toggle="modal"
+                                            data-target="#borrowModal">PINJAM</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more car items here as needed -->
+
+                <!--Pinjam MODAL-->
+
+                <div class="modal fade" id="borrowModal" tabindex="-1" role="dialog" aria-labelledby="borrowModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="borrowModalLabel">Pinjam Kendaraan</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- Your form elements go here -->
+                                <form id="borrowForm">
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="firstName">Nama Depan</label>
+                                            <input type="text" class="form-control" id="firstName"
+                                                placeholder="Nama Depan" required>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="lastName">Nama Belakang</label>
+                                            <input type="text" class="form-control" id="lastName"
+                                                placeholder="Nama Belakang" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="officeBranch">Kantor Cabang </label>
+                                        <select class="form-control" id="officeBranch" required>
+                                            <option disabled value="">Pilih Kantor Cabang</option>
+                                            <option value="branch1">Tanah Merdeka</option>
+                                            <option value="branch2">Jl. Raya Klp. Dua Wetan </option>
+                                            <!-- Add more options as needed -->
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="additionalNotes">Catatan</label>
+                                        <textarea class="form-control small" id="additionalNotes" rows="3"
+                                            placeholder="Contoh : Digunakan untuk pengantaran barang antar kota"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Kirim</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    document.getElementById('borrowForm').addEventListener('submit', function (event) {
+                        event.preventDefault();
+                        console.log('Form submitted');
+                        $('#borrowModal').modal('hide');
+                    });
+                </script>
+
+                <div class="car-item ftco-animate">
+                    <div class="photo-container">
+                        <img src="images/1675235520_beat_silver.jpg" alt="Honda Beat">
+                    </div>
+                    <div class="car-info">
+                        <div class="car-row car-info-header">
+                            <div class="car-name">Honda Beat</div>
+                        </div>
+                        <div class="car-row car-info-details">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <div class="info-icon-container"><img class="info-icon" src="images/plate.png"
+                                                alt="License Icon"></div>
+                                        <div class="info-label">Nomor Plat</div>
+                                        <div class="info-value">B 4562 BHI</div>
+                                    </td>
+                                    <td>
+                                        <div class="info-icon-container"><img class="info-icon"
+                                                src="images/005-depreciation.png" alt="STNK Icon"></div>
+                                        <div class="info-label">Status</div>
+                                        <div class="info-value">Perpanjang STNK</div>
+                                    </td>
+                                    <td>
+                                        <div class="info-icon-container"><img class="info-icon" src="images/check.png"
+                                                alt="Tax Icon"></div>
+                                        <div class="info-label">Pajak/Tahun </div>
+                                        <div class="info-value">241 <span> hari lagi</span> </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="info-icon-container"><img class="info-icon"
+                                                src="images/004-location.png" alt="Location Icon"> <span
+                                                class="info-label">Location :</span> </div>
+                                    </td>
+                                    <td>
+                                        <div class="info-value">Jakarta</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <div class="info-value availability">Tidak Dipakai</div>
+                                    </td>
+                                    <td>
+                                        <button class="borrow-button" data-toggle="modal"
+                                            data-target="#borrowModal">PINJAM</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car-item ftco-animate">
+                    <div class="photo-container">
+                        <img src="images/1675235520_beat_silver.jpg" alt="Honda Beat">
+                    </div>
+                    <div class="car-info">
+                        <div class="car-row car-info-header">
+                            <div class="car-name">Honda Beat</div>
+                        </div>
+                        <div class="car-row car-info-details">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <div class="info-icon-container"><img class="info-icon" src="images/plate.png"
+                                                alt="License Icon"></div>
+                                        <div class="info-label">Nomor Plat</div>
+                                        <div class="info-value">B 4562 BHI</div>
+                                    </td>
+                                    <td>
+                                        <div class="info-icon-container"><img class="info-icon"
+                                                src="images/005-depreciation.png" alt="STNK Icon"></div>
+                                        <div class="info-label">Status</div>
+                                        <div class="info-value">Perpanjang STNK</div>
+                                    </td>
+                                    <td>
+                                        <div class="info-icon-container"><img class="info-icon" src="images/check.png"
+                                                alt="Tax Icon"></div>
+                                        <div class="info-label">Pajak/Tahun </div>
+                                        <div class="info-value">241 <span> hari lagi</span> </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="info-icon-container"><img class="info-icon"
+                                                src="images/004-location.png" alt="Location Icon"> <span
+                                                class="info-label">Location :</span> </div>
+                                    </td>
+                                    <td>
+                                        <div class="info-value">Jakarta</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <div class="info-value availability">Tidak Dipakai</div>
+                                    </td>
+                                    <td>
+                                        <button class="borrow-button" data-toggle="modal"
+                                            data-target="#borrowModal">PINJAM</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-item ftco-animate">
+                    <div class="photo-container">
+                        <img src="images/1675235520_beat_silver.jpg" alt="Honda Beat">
+                    </div>
+                    <div class="car-info">
+                        <div class="car-row car-info-header">
+                            <div class="car-name">Honda Beat</div>
+                        </div>
+                        <div class="car-row car-info-details">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <div class="info-icon-container"><img class="info-icon" src="images/plate.png"
+                                                alt="License Icon"></div>
+                                        <div class="info-label">Nomor Plat</div>
+                                        <div class="info-value">B 4562 BHI</div>
+                                    </td>
+                                    <td>
+                                        <div class="info-icon-container"><img class="info-icon"
+                                                src="images/005-depreciation.png" alt="STNK Icon"></div>
+                                        <div class="info-label">Status</div>
+                                        <div class="info-value">Perpanjang STNK</div>
+                                    </td>
+                                    <td>
+                                        <div class="info-icon-container"><img class="info-icon" src="images/check.png"
+                                                alt="Tax Icon"></div>
+                                        <div class="info-label">Pajak/Tahun </div>
+                                        <div class="info-value">241 <span> hari lagi</span> </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="info-icon-container"><img class="info-icon"
+                                                src="images/004-location.png" alt="Location Icon"> <span
+                                                class="info-label">Location :</span> </div>
+                                    </td>
+                                    <td>
+                                        <div class="info-value">Jakarta</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <div class="info-value availability">Tidak Dipakai</div>
+                                    </td>
+                                    <td>
+                                        <button class="borrow-button" data-toggle="modal"
+                                            data-target="#borrowModal">PINJAM</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-item ftco-animate">
+                    <div class="photo-container">
+                        <img src="images/1675235520_beat_silver.jpg" alt="Honda Beat">
+                    </div>
+                    <div class="car-info">
+                        <div class="car-row car-info-header">
+                            <div class="car-name">Honda Beat</div>
+                        </div>
+                        <div class="car-row car-info-details">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <div class="info-icon-container"><img class="info-icon" src="images/plate.png"
+                                                alt="License Icon"></div>
+                                        <div class="info-label">Nomor Plat</div>
+                                        <div class="info-value">B 4562 BHI</div>
+                                    </td>
+                                    <td>
+                                        <div class="info-icon-container"><img class="info-icon"
+                                                src="images/005-depreciation.png" alt="STNK Icon"></div>
+                                        <div class="info-label">Status</div>
+                                        <div class="info-value">Perpanjang STNK</div>
+                                    </td>
+                                    <td>
+                                        <div class="info-icon-container"><img class="info-icon" src="images/check.png"
+                                                alt="Tax Icon"></div>
+                                        <div class="info-label">Pajak/Tahun </div>
+                                        <div class="info-value">241 <span> hari lagi</span> </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="info-icon-container"><img class="info-icon"
+                                                src="images/004-location.png" alt="Location Icon"> <span
+                                                class="info-label">Location :</span> </div>
+                                    </td>
+                                    <td>
+                                        <div class="info-value">Jakarta</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <div class="info-value availability">Tidak Dipakai</div>
+                                    </td>
+                                    <td>
+                                        <button class="borrow-button" data-toggle="modal"
+                                            data-target="#borrowModal">PINJAM</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-item ftco-animate">
+                    <div class="photo-container">
+                        <img src="images/1675235520_beat_silver.jpg" alt="Honda Beat">
+                    </div>
+                    <div class="car-info">
+                        <div class="car-row car-info-header">
+                            <div class="car-name">Honda Beat</div>
+                        </div>
+                        <div class="car-row car-info-details">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <div class="info-icon-container"><img class="info-icon" src="images/plate.png"
+                                                alt="License Icon"></div>
+                                        <div class="info-label">Nomor Plat</div>
+                                        <div class="info-value">B 4562 BHI</div>
+                                    </td>
+                                    <td>
+                                        <div class="info-icon-container"><img class="info-icon"
+                                                src="images/005-depreciation.png" alt="STNK Icon"></div>
+                                        <div class="info-label">Status</div>
+                                        <div class="info-value">Perpanjang STNK</div>
+                                    </td>
+                                    <td>
+                                        <div class="info-icon-container"><img class="info-icon" src="images/check.png"
+                                                alt="Tax Icon"></div>
+                                        <div class="info-label">Pajak/Tahun </div>
+                                        <div class="info-value">241 <span> hari lagi</span> </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="info-icon-container"><img class="info-icon"
+                                                src="images/004-location.png" alt="Location Icon"> <span
+                                                class="info-label">Location :</span> </div>
+                                    </td>
+                                    <td>
+                                        <div class="info-value">Jakarta</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <div class="info-value availability">Tidak Dipakai</div>
+                                    </td>
+                                    <td>
+                                        <button class="borrow-button" data-toggle="modal"
+                                            data-target="#borrowModal">PINJAM</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-item ftco-animate">
+                    <div class="photo-container">
+                        <img src="images/1675235520_beat_silver.jpg" alt="Honda Beat">
+                    </div>
+                    <div class="car-info">
+                        <div class="car-row car-info-header">
+                            <div class="car-name">Honda Beat</div>
+                        </div>
+                        <div class="car-row car-info-details">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <div class="info-icon-container"><img class="info-icon" src="images/plate.png"
+                                                alt="License Icon"></div>
+                                        <div class="info-label">Nomor Plat</div>
+                                        <div class="info-value">B 4562 BHI</div>
+                                    </td>
+                                    <td>
+                                        <div class="info-icon-container"><img class="info-icon"
+                                                src="images/005-depreciation.png" alt="STNK Icon"></div>
+                                        <div class="info-label">Status</div>
+                                        <div class="info-value">Perpanjang STNK</div>
+                                    </td>
+                                    <td>
+                                        <div class="info-icon-container"><img class="info-icon" src="images/check.png"
+                                                alt="Tax Icon"></div>
+                                        <div class="info-label">Pajak/Tahun </div>
+                                        <div class="info-value">241 <span> hari lagi</span> </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="info-icon-container"><img class="info-icon"
+                                                src="images/004-location.png" alt="Location Icon"> <span
+                                                class="info-label">Location :</span> </div>
+                                    </td>
+                                    <td>
+                                        <div class="info-value">Jakarta</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <div class="info-value availability">Tidak Dipakai</div>
+                                    </td>
+                                    <td>
+                                        <button class="borrow-button" data-toggle="modal"
+                                            data-target="#borrowModal">PINJAM</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-item ftco-animate">
+                    <div class="photo-container">
+                        <img src="images/1675235520_beat_silver.jpg" alt="Honda Beat">
+                    </div>
+                    <div class="car-info">
+                        <div class="car-row car-info-header">
+                            <div class="car-name">Honda Beat</div>
+                        </div>
+                        <div class="car-row car-info-details">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <div class="info-icon-container"><img class="info-icon" src="images/plate.png"
+                                                alt="License Icon"></div>
+                                        <div class="info-label">Nomor Plat</div>
+                                        <div class="info-value">B 4562 BHI</div>
+                                    </td>
+                                    <td>
+                                        <div class="info-icon-container"><img class="info-icon"
+                                                src="images/005-depreciation.png" alt="STNK Icon"></div>
+                                        <div class="info-label">Status</div>
+                                        <div class="info-value">Perpanjang STNK</div>
+                                    </td>
+                                    <td>
+                                        <div class="info-icon-container"><img class="info-icon" src="images/check.png"
+                                                alt="Tax Icon"></div>
+                                        <div class="info-label">Pajak/Tahun </div>
+                                        <div class="info-value">241 <span> hari lagi</span> </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="info-icon-container"><img class="info-icon"
+                                                src="images/004-location.png" alt="Location Icon"> <span
+                                                class="info-label">Location :</span> </div>
+                                    </td>
+                                    <td>
+                                        <div class="info-value">Jakarta</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <div class="info-value availability">Tidak Dipakai</div>
+                                    </td>
+                                    <td>
+                                        <button class="borrow-button" data-toggle="modal"
+                                            data-target="#borrowModal">PINJAM</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-item ftco-animate">
+                    <div class="photo-container">
+                        <img src="images/1675235520_beat_silver.jpg" alt="Honda Beat">
+                    </div>
+                    <div class="car-info">
+                        <div class="car-row car-info-header">
+                            <div class="car-name">Honda Beat</div>
+                        </div>
+                        <div class="car-row car-info-details">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <div class="info-icon-container"><img class="info-icon" src="images/plate.png"
+                                                alt="License Icon"></div>
+                                        <div class="info-label">Nomor Plat</div>
+                                        <div class="info-value">B 4562 BHI</div>
+                                    </td>
+                                    <td>
+                                        <div class="info-icon-container"><img class="info-icon"
+                                                src="images/005-depreciation.png" alt="STNK Icon"></div>
+                                        <div class="info-label">Status</div>
+                                        <div class="info-value">Perpanjang STNK</div>
+                                    </td>
+                                    <td>
+                                        <div class="info-icon-container"><img class="info-icon" src="images/check.png"
+                                                alt="Tax Icon"></div>
+                                        <div class="info-label">Pajak/Tahun </div>
+                                        <div class="info-value">241 <span> hari lagi</span> </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="info-icon-container"><img class="info-icon"
+                                                src="images/004-location.png" alt="Location Icon"> <span
+                                                class="info-label">Location :</span> </div>
+                                    </td>
+                                    <td>
+                                        <div class="info-value">Jakarta</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <div class="info-value availability">Tidak Dipakai</div>
+                                    </td>
+                                    <td>
+                                        <button class="borrow-button" data-toggle="modal"
+                                            data-target="#borrowModal">PINJAM</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+            <div class="row mt-5">
+                <div class="col text-center">
+                    <div class="block-27">
+                        <ul>
+                            <li><a href="#">&lt;</a></li>
+                            <li class="active"><span>1</span></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">&gt;</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer Starts Here-->
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2"><a href="#" class="logo">PINJAM<span>Kendaraan</span></a></h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                        <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                            <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                            <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                            <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4 ml-md-5">
+                        <h2 class="ftco-heading-2">Information</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="py-2 d-block">Tentang PINJAMKENDARAAN</a></li>
+                            <li><a href="#" class="py-2 d-block">Pinjam & Servis</a></li>
+                            <li><a href="#" class="py-2 d-block">Syarat dan Ketentuan</a></li>
+                            <li><a href="#" class="py-2 d-block">Kebijakan Privasi &amp; Cookies</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">PT Yetoya Solusi Indonesia</h2>
+                        <div class="block-23 mb-3">
+                            <ul>
+                                <li><span class="icon icon-map-marker"></span><span class="text">4, Jl. Raya Klp. Dua
+                                        Wetan No.9, RT.4/RW.8, Klp. Dua Wetan, Kec. Ciracas, Kota Jakarta Timur, Daerah
+                                        Khusus Ibukota Jakarta 13730</span></li>
+                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">(021)
+                                            39700999</span></a></li>
+                                <li><a href="#"><span class="icon icon-envelope"></span><span
+                                            class="text">info@yourdomain.com</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+
+                    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script> All rights reserved | This template
+                        is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a
+                            href="https://colorlib.com" target="_blank">Colorlib</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+                stroke="#F96D00" />
+        </svg></div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.timepicker.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="js/google-map.js"></script>
+    <script src="js/main.js"></script>
+
+    <!--button-->
+
+    <script>
+        window.onload = function () {
+            const urlParams = new URLSearchParams(window.location.search);
+
+            const description = urlParams.get('description');
+            const bookPickDate = urlParams.get('book_pick_date');
+            const timePick = urlParams.get('time_pick');
+            const bookOffDate = urlParams.get('book_off_date');
+
+            document.getElementById('description').textContent = description;
+            document.getElementById('book_pick_date').textContent = bookPickDate;
+            document.getElementById('time_pick').textContent = timePick;
+            document.getElementById('book_off_date').textContent = bookOffDate;
+
+            const cancelBtn = document.getElementById('cancel-btn');
+            cancelBtn.addEventListener('click', function () {
+                // Handle cancel action here
+            });
+
+            const submitBtn = document.getElementById('submit-btn');
+            submitBtn.addEventListener('click', function () {
+                // Handle submit action here
+            });
+        };
+    </script>
+
+    <script>
+        document.getElementById('search-input').addEventListener('keyup', function (event) {
+            if (event.key === 'Enter') {
+                event.preventDefault();
+                // Handle search action here
+                const searchQuery = this.value;
+                console.log(`Search query: ${searchQuery}`);
+            }
+        });
+    </script>
+
+    <script>
+        function redirectToForm() {
+            window.location.href = "index.html#rent-form";
+        }
+    </script>
+
+
+</body>
+
+</html>
