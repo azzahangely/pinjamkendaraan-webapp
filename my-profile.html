@@ -78,11 +78,11 @@
           <ul class="nav justify-content-center bg-white rounded justify-content-center mb-3" id="profileTabs" role="tablist">
             <li class="nav-item">
               <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
-                aria-controls="profile" aria-selected="true"><span class="icon-person"></span></a>
+                aria-controls="profile" aria-selected="true"><span class="icon-person"></span> Profil</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" id="editProfile-tab" data-toggle="tab" href="#editProfile" role="tab"
-                aria-controls="editProfile" aria-selected="false"><span class="icon-magic" ></span></a>
+                aria-controls="editProfile" aria-selected="false"><span class="icon-magic" ></span> Ubah Profil</a>
             </li>
           </ul>
 
@@ -210,6 +210,7 @@
                     </div>
                   </div>
                 </div>
+              
                 <div class="col-md-8">
                   <div class="card-title mt-3">
                     <h1>Ubah Profil</h1>
@@ -229,7 +230,12 @@
                         </div>
                         <div class="form-group">
                           <label for="phone">Nomor Telepon</label>
-                          <input type="tel" class="form-control" id="phone" name="phone">
+                          <div class="input-group">
+                              <div class="input-group-prepend">
+                                  <span class="input-group-text">+62</span>
+                              </div>
+                              <input type="tel" class="form-control" id="phone" name="phone">
+                          </div>
                         </div>
                         <div class="form-group">
                           <label for="address">Alamat</label>
@@ -414,31 +420,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
   
   
-  <script>
-    // Initialize intlTelInput on phone and mobile inputs
-    var phoneInput = document.querySelector("#phone");
 
-    var phoneInputInstance = window.intlTelInput(phoneInput, {
-      initialCountry: "auto", // Automatically select the user's country
-      separateDialCode: true, // Display the country code in a separate part of the input
-    });
-
-
-    // Listen for the phone input's "countrychange" event
-    phoneInputInstance.node.addEventListener("countrychange", function () {
-      var selectedCountry = phoneInputInstance.getSelectedCountryData();
-
-      // Clear existing options in the mobile input's country code dropdown
-      mobileInputInstance.countryList.innerHTML = "";
-
-      // Add country-specific options to the mobile input's country code dropdown
-      var mobileCountryOptions = selectedCountry.countryCodes.map(function (countryCode) {
-        return '<option value="' + countryCode + '">' + countryCode + '</option>';
-      });
-
-      mobileInputInstance.countryList.insertAdjacentHTML("beforeend", mobileCountryOptions.join(""));
-    });
-  </script>
 
 </body>
 
