@@ -8,23 +8,16 @@
 
   <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap"
     rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="images/logo hsp.jpg" />
-
+  <link rel="shortcut icon" type="image/x-icon" href="images/logo hsp.jpg" />
   <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
   <link rel="stylesheet" href="css/animate.css">
-
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" href="css/magnific-popup.css">
-
   <link rel="stylesheet" href="css/aos.css">
-
   <link rel="stylesheet" href="css/ionicons.min.css">
-
   <link rel="stylesheet" href="css/bootstrap-datepicker.css">
   <link rel="stylesheet" href="css/jquery.timepicker.css">
-
-
   <link rel="stylesheet" href="css/flaticon.css">
   <link rel="stylesheet" href="css/icomoon.css">
   <link rel="stylesheet" href="css/style.css">
@@ -90,6 +83,7 @@
     <div class="container">
       <div class="row no-gutters">
         <div class="col-md-12	featured-top px-md-5">
+
           <!-- FORM SHOULD STARTS HERE -->
           <form action="car.html" method="get" class="request-form ftco-animate bg-primary" id="rent-form">
             <h2>Formulir Peminjaman Kendaraan</h2>
@@ -102,7 +96,6 @@
                 <option class="bg-dark">Servis Kendaraan</option>
               </select>
             </div>
-
             <!-- row 2 : rent/service data -->
             <div class="d-flex">
               <div class="form-group mr-2">
@@ -121,18 +114,17 @@
                 <input type="date" class="form-control" id="tanggalPengembalian" placeholder="DD-MM-YYYY">
               </div>
             </div>
-
             <!-- row 4 : direct to show available vehicles-->
             <div class="d-flex">
               <div class="form-group">
                 <!-- trigger button for a modal -->
                 <a href="car.html" class="btn btn-outline-white" role="button" aria-pressed="true"> <span
-                    class="icon-search"></span> Cari Kendaraan</a>
+                    class="icon-search" id="find_vehicle_button"></span> Cari Kendaraan</a>
               </div>
             </div>
           </form>
+          <!-- FORM ENDS HERE -->
 
-          <!-- FORM SHOULD END HERE -->
           <!-- The Modal -->
           <div class="modal fade" id="vehicleModal" tabindex="-1" role="dialog" aria-labelledby="vehicleModalLabel"
             aria-hidden="true">
